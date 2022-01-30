@@ -1,0 +1,255 @@
+    /* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    /* text-decoration: none; */
+}
+
+    /* Dùn chung */
+.text-white{
+    color: #fff !important;
+}
+    
+    /* CODE CHÍNH */
+body{
+    color: #fff;
+    text-align: center;
+    position:relative ;
+}
+
+@keyframes heart {
+    /* 0% {
+        opacity:1;
+      }
+      20% {
+        opacity:0.75;
+      }
+      40% {
+        opacity:0.5;
+      }
+      60% {
+        opacity:0.25;
+      }
+     80% {
+        opacity:0.75;
+      }
+      100% {
+        opacity:1;
+      } */
+      from{
+          background-color: rgb(72, 107, 223);
+      }
+      to{
+          background-color: red;
+      }
+}
+@keyframes heart1 {
+      from{
+          background-color: rgb(72, 107, 223);
+      }
+      to{
+          background-color: rgb(97, 245, 29);
+      }
+}
+
+@keyframes container{
+    from{
+        opacity: 0;
+        transform: translateY(-150);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+.container{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: block;
+    background-color: rgb(250, 129, 230);
+    left: 30px;
+    top: 120px;
+    /* transform: translate(-50%,-50%); */
+    animation: container ease 3s;
+}
+
+.container::before, .container::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: red;
+    animation-name: heart;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+.container::before {
+    left: 150px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+.container::after {
+    left: 100px;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+#caHoi1{
+    border: rgb(82, 74, 95) solid 2px ;
+    background-color: rgb(160, 11, 11);
+    line-height: 60px;
+}
+
+.title{
+    color: #000;
+    font-family: Brush Script MT;
+    font-size: 30px;
+}
+
+/* ------------------------ */
+#bt1{
+    position: absolute;
+    left: 48px;
+    top: 220px;
+}
+
+#bt1>input:hover{
+    opacity: 0.75;
+}
+
+@keyframes input {
+    0% {
+        opacity:1;
+      }
+      20% {
+        opacity:0.75;
+      }
+      40% {
+        opacity:0.5;
+      }
+      60% {
+        opacity:0.25;
+      }
+     80% {
+        opacity:0.75;
+      }
+      100% {
+        opacity:1;
+      }
+}
+
+#bt1>input{
+    display: inline-block;
+    padding: 5px;
+    margin-left:8px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-style: oblique;
+    font-size: 16x;
+    background-color: rgb(235, 166, 166);
+    animation-name: input;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/* ------------------------ */
+.container .nav{
+    padding: 5px;
+}
+/* ----------Thông báo----------- */
+.notify{
+    background-color: #000;
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    line-height: 50px;
+    left: 45px;
+    top: 200px;
+    animation: container ease 3s;
+}
+/* ----------container1----------- */
+.container1{
+    border: rgb(82, 74, 95) solid 2px ;
+    position: absolute;
+    width: 300px;
+    height: 550px;
+    display: block;
+    background-color: rgb(85, 151, 182);
+    left: 30px;
+    top: 120px;
+    /* transform: translate(-50%,-50%); */
+    animation: container ease 3s;
+}
+/* --------------header---------- */
+.header{
+    background-color: rgb(230, 219, 219);
+    line-height: 40px;
+}
+/* --------------main------------ */
+#main{
+
+}
+/* --------------content------------ */
+.content{
+    padding: 16px 24px 4px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.content input{
+    width: 100%;
+    padding: 6px 0;
+    border-radius: 5px;
+}
+/* --------------ip2------------ */
+#bt2{
+    padding: 18px 0 0;
+}
+#bt2 input{
+    padding: 5px;
+    animation-name: input;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background-color: rgb(230, 219, 219);
+    font-size: 18px;
+
+}
+/* ----------container2----------- */
+.container2{
+    border: rgb(82, 74, 95) solid 2px ;
+    position: absolute;
+    width: 300px;
+    display: block;
+    background-color: rgb(226, 226, 226);
+    color: #000;
+    left: 30px;
+    top: 120px;
+    text-align: justify;
+}
+.header2{
+    background-color: rgb(214, 106, 106);
+    line-height: 40px;
+    padding: 8px 16px;
+
+}
+.content2{
+    padding: 8px 16px;
+    font-size: 18px ;
+}
+.container2 img{
+    /* position: absolute; */
+    width: 100%;
+    /* top: 1000px; */
+}
